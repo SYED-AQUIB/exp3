@@ -18,7 +18,7 @@ tasks.register('prepareDocs', Copy) {
     group = 'documentation'
 
     from('src/main/resources') {
-        include '*/.html', '*/.css', '*/.js', '*/.png', '*/.jpg', '*/.jpeg', '*/.gif', '*/.svg'
+        include '**/*.html', '**/*.css', '**/*.js', '**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'
     }
     into("$rootDir/docs")
 }
